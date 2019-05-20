@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+
+    <Button
+        android:id="@+id/default_bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="给js发送数据并获取反馈结果"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        />
+
+    <Button
+        android:id="@+id/special_bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="给js指定方法发送数据并获取反馈结果"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        />
+
+    <com.github.lzyzsd.jsbridge.BridgeWebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+
+
+</LinearLayout>
